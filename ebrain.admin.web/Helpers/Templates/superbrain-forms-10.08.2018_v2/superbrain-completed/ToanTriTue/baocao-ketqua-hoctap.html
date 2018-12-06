@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0 }
+    .content { padding: 0 20px 20px; }
+    .center { text-align: center }
+    .right { text-align: right }
+    .no-margin { margin: 0 }
+    .italic { font-style: italic }
+    .bold { font-weight: bold }
+    .dflex { display: flex }
+    .w50 { width: 50px }
+
+    .rotate {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      display: block;
+    }
+
+    /* header */
+    .head {
+      display: flex;
+      background-color: #A6CE39;
+      color: #fff;
+      justify-content: flex-end;
+    }
+
+    .head .logo {
+      margin: 10px;
+      height: 70px;
+    }
+    .head .logo img { height: 100%; }
+    .head .company { margin: auto 0; }
+    /* end header */
+
+    h1 {
+      margin: auto 50px auto;
+      text-shadow: 2px 0 0 #E8F3A8, -2px 0 0 #E8F3A8, 0 2px 0 #E8F3A8, 0 -2px 0 #E8F3A8, 1px 1px #E8F3A8, -1px -1px 0 #E8F3A8, 1px -1px 0 #E8F3A8, -1px 1px 0 #E8F3A8;
+      color: #000;
+    }
+
+    .info-block {
+      display: flex;
+      color: #6b6565;
+      justify-content: space-between;
+    }
+    
+    .info-block .right-block { width: 350px }
+    .info-block .right-block .fomulars {
+      display: flex;
+      justify-content: space-between;
+    }
+    .info-block .right-block p.fomular {
+      background-color: #d0d0d0;
+      padding: 4px;
+      margin: auto 0;
+      height: 35px;
+      width: 250px;
+    }
+    
+    .detail-block { margin-top: 10px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    table, td, th { border: 0.2px solid; }
+    th { height: 30px; }
+		td { height: 35px; padding: 0 5px; }
+    th.w60h70 {
+      width: 60px;
+      height: 70px;
+      font-weight: normal;
+    }
+
+    td.bd-l-bold,
+    th.bd-l-bold {
+      border-left-width: 2px;
+    }
+    td.bd-r-bold,
+    th.bd-r-bold {
+      border-right-width: 2px;
+    }
+
+    hr {
+      border-top: 1px dashed #8c8b8b;
+      margin-top: 90px;
+    }
+
+    .background-1 { background-color: #FFE59A }
+    .background-2 { background-color: #DEEAF6 }
+    .footer { margin-top: 10px; }
+    .footer table { width: 400px; margin: auto }
+    .footer table td { width: 115px; }
+    .footer table th, .footer table td { height: 25px;}
+  </style>
+</head>
+<body>
+  <div class="template">
+    <div class="head">
+      <h1>BÁO CÁO KẾT QUẢ HỌC TẬP</h1>
+      <div class="company">
+        <p class="no-margin bold">TOÁN TRÍ TUỆ SUPERBRAIN ĐÀ NẴNG</p>
+        <p class="no-margin italic">111 Nguyễn Chí Thanh, Quận Hải Châu, ĐN</p>
+        <p class="no-margin italic">
+          Phone: <span id="phone1">0511.3812234</span> - <span id="phone2">0915599224</span>
+        </p>
+      </div>
+      <div class="logo branch">
+        <img src="logo_superbrain.png" />
+      </div>
+    </div>
+    <div class="content">
+      <div class="title-block">
+        <div class="info-block">
+          <div class="left-block">
+            <p>Tên học viên:</p>
+            <p>Năm sinh:</p>
+            <p>Phụ huynh:</p>
+          </div>
+          <div class="center-block">
+            <p>Lớp: </p>
+            <p>Khóa học: </p>
+            <p>GVPT: </p>
+          </div>
+          <div class="right-block">
+            <p style="color: black; margin-bottom: 0" class="bold">Yêu cầu đạt được: </p>
+            <div class="fomulars">
+              <p>Giữa khóa:</p>
+              <p class="fomular italic">Công thức:</p>
+            </div>
+            <div class="fomulars">
+              <p>Cuối khóa:</p>
+              <p class="fomular italic">Công thức:</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-block">
+        <table>
+          <thead class="background-1">
+            <tr class="center">
+              <th rowspan="3" class="w50"><div><span class="rotate w60h70">Buổi</span></div></th>
+              <th rowspan="3" style="width: 100px">Ngày</th>
+              <th rowspan="3" style="width: 150px">Bài học</th>
+              <th rowspan="2" colspan="2" class="bd-l-bold bd-r-bold">BTVN</th>
+              <th colspan="5" class="bd-r-bold">LUYỆN TẬP ONLINE</th>
+              <th colspan="5" class="bd-r-bold">NHẬN XÉT</th>
+              <th rowspan="3" class="w50 bd-r-bold"><div><span class="rotate">POWER</span></div></th>
+              <th rowspan="3" class="w60h70">Giáo viên</th>
+            </tr>
+            <tr>
+              <th class="bd-l-bold italic" colspan="2">Ở nhà</th>
+              <th class="bd-l-bold bd-r-bold italic" colspan="3">Trên lớp</th>
+              <th class="bd-r-bold italic" colspan="4">Kỹ năng</th>
+              <th class="bd-r-bold italic" rowspan="2" style="width: 200px">Khác</th>
+            </tr>
+            <tr>
+              <th class="w60h70 background-2"><div><span class="rotate">Hoàn<br>thành</span></div></th>
+              <th class="w60h70 background-2 bd-r-bold"><div><span class="rotate">Chính<br>xác</span></div></th>
+              <th class="w60h70 background-2"><div><span class="rotate">Hoàn<br>thành</span></div></th>
+              <th class="w60h70 background-2 bd-r-bold"><div><span class="rotate">Chính<br>xác</span></div></th>
+              <th class="w60h70 background-2">Chữ số<br>(D)</th>
+              <th class="w60h70 background-2">Hàng<br>(R)</th>
+              <th class="w60h70 background-2 bd-r-bold">Giây<br>(S)</th>
+              <th class="w60h70"><div><span class="rotate">Tập<br>trung</span></div></th>
+              <th class="w60h70"><div><span class="rotate">Tự<br>tin</span></div></th>
+              <th class="w60h70"><div><span class="rotate">Ghi<br>nhớ</span></div></th>
+              <th class="w60h70"><div><span class="rotate">Phản<br>xạ</span></div></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="center">1</td>
+              <td class="center"></td>
+              <td class="left"></td>
+              <td class="center bd-l-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center "></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center "></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="left bd-r-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td class="center"></td>
+              <td class="left"></td>
+              <td class="center bd-l-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center "></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center "></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="left bd-r-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td class="center"></td>
+              <td class="left"></td>
+              <td class="center bd-l-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center "></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center "></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="left bd-r-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td class="center"></td>
+              <td class="left"></td>
+              <td class="center bd-l-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center "></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center "></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="left bd-r-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td class="center"></td>
+              <td class="left"></td>
+              <td class="center bd-l-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+              <td class="center "></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center "></td>
+              <td class="center"></td>
+              <td class="center"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="left bd-r-bold"></td>
+              <td class="center bd-r-bold"></td>
+              <td class="center"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer dflex">
+        <table class="center">
+          <thead>
+            <tr>
+              <th colspan="2" class="background-2">Giữa khóa</th>
+              <th colspan="2" class="background-1">Cuối khóa</th>
+            </tr>
+            <tr class="italic">
+              <td class="background-2">Tổng</td>
+              <td class="background-2">Tốc độ (D/R/S)</td>
+              <td class="background-1">Tổng</td>
+              <td class="background-1">Tốc độ (D/R/S)</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="italic">
+              <td />
+              <td />
+              <td />
+              <td />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</body>
+</html>

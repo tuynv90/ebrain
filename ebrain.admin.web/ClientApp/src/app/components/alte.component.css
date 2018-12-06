@@ -1,0 +1,433 @@
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .body-content {
+    padding-top: 50px;
+  }
+}
+
+/* login page */
+.wrapper.login {
+  /*display: flex;*/
+  flex-flow: column;
+}
+  .wrapper.login .main-header {
+      z-index: 1;
+  }
+
+  .wrapper.login .main-header a.logo {
+      width: 100%;
+  }
+
+  .wrapper.login .content-wrapper, .wrapper.login .main-footer {
+      margin-left: 0;
+  }
+
+/* button style */
+.btn-manager {
+}
+
+  .btn-manager.disabled a {
+      background-color: #fcfcfd !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+  }
+
+      .btn-manager.disabled a * {
+          color: #d2dae1 !important;
+      }
+
+      .btn-manager.disabled a .icon {
+          color: #fff !important;
+      }
+
+      .btn-manager.disabled a:hover .hover-rotate {
+          -webkit-transform: none !important;
+          -ms-transform: none !important;
+          transform: none !important;
+      }
+
+/* general style */
+.control-box {
+  margin-bottom: 10px;
+}
+
+.float-right {
+  float: right;
+}
+
+.no-pd {
+  padding: 0;
+}
+
+.no-pd-l {
+  padding-left: 0;
+}
+
+.no-pd-r {
+  padding-right: 0;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+label.control-label {
+  white-space: nowrap;
+  text-align: left !important;
+}
+
+/* style side bar menu */
+.main-sidebar .sidebar .sidebar-menu li.menu-open > a {
+  color: #FF800A;
+  font-weight: bold;
+}
+
+/* style side bar menu item selected*/
+.active-link {
+  color: #ffffff !important;
+  font-weight:bold;
+}
+
+/* ngx-datatable */
+.ngx-datatable.fixed-header .datatable-header {
+  height: auto !important;
+}
+
+
+  .ngx-datatable.fixed-header .datatable-header .datatable-header-inner .datatable-header-cell {
+      color: #fff;
+  }
+
+      .ngx-datatable.fixed-header .datatable-header .datatable-header-inner .datatable-header-cell.text-center,
+      .ngx-datatable.material .datatable-body .datatable-body-row .datatable-body-cell.text-center {
+          text-align: center;
+      }
+
+.ngx-datatable .datatable-body .datatable-body-row .datatable-body-cell-label {
+  word-break: break-all;
+  white-space: normal;
+}
+
+.ngx-datatable.material .datatable-body .datatable-body-row .datatable-body-cell.text-right {
+  text-align: right;
+}
+
+.ngx-datatable.material .datatable-body .datatable-body-row .datatable-body-cell input {
+  width: 100%;
+  text-align: right;
+}
+
+.ngx-datatable .datatable-body .datatable-scroll {
+  width: 100% !important;
+}
+
+
+  .ngx-datatable .datatable-body .datatable-scroll .datatable-body-row {
+      width: 100% !important;
+      height: auto !important;
+      border-top: none !important;
+  }
+
+.ngx-datatable .datatable-body .datatable-row-wrapper:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.ngx-datatable.material .datatable-body datatable-body-row.datatable-body-row.row-hightlight {
+  background-color: rebeccapurple;
+}
+
+  .ngx-datatable.material .datatable-body datatable-body-row.datatable-body-row.row-hightlight:hover .datatable-body-cell {
+      color: #000;
+  }
+
+  .ngx-datatable.material .datatable-body datatable-body-row.datatable-body-row.row-hightlight datatable-body-cell.datatable-body-cell {
+      color: #fff;
+  }
+
+.ngx-datatable .datatable-body .datatable-body-row .datatable-body-cell {
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd !important;
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+  .ngx-datatable .datatable-body .datatable-body-row .datatable-body-cell:last-child {
+      border-right: none;
+  }
+
+.ngx-datatable .datatable-header-cell.datatable-header-cell {
+  border-right: 1px solid;
+}
+
+  .ngx-datatable .datatable-header-cell.datatable-header-cell:last-child {
+      border-right: none;
+  }
+
+/* modal */
+.modal-dialog.modal-large {
+  width: 90%;
+}
+
+.modal-content {
+  border-radius: 5px !important;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+
+.modal-footer {
+  margin-top: 10px;
+}
+
+.modal-content ngx-datatable datatable-body {
+  width: 100% !important;
+  max-height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-content ngx-datatable.row-pointer datatable-body .datatable-row-wrapper:hover,
+ngx-datatable.row-pointer datatable-body .datatable-row-wrapper:hover {
+  cursor: pointer;
+}
+
+/* breadcrumb  */
+.breadcrumb {
+  background-color: transparent;
+  /*border: 1px solid #eaeef1;*/
+  padding-left: 10px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+  .breadcrumb > li + li:before,
+  .breadcrumb > .active {
+      color: inherit;
+  }
+
+
+
+/* page structor */
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden !important;
+}
+
+header {
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 10px;
+}
+
+  header.main-header {
+      margin-bottom: 0px;
+  }
+
+/* content app */
+#app_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+  #app_container.login .content-wrapper {
+      height: 100vh !important; /* 102px = header(50px) + footer(51px) */
+  }
+
+  #app_container.login .content-wrapper .content {
+      padding: 0;
+  }
+
+  #app_container .content-wrapper {
+      height: calc(100vh - 102px); /* 102px = header(51px) + footer(51px) */
+      min-height: inherit !important;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      flex-flow: column;
+  }
+
+      #app_container .content-wrapper section.content-header {
+          flex: 0 1 auto;
+      }
+
+      #app_container .content-wrapper section.content {
+          flex: 1 1 auto;
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+      }
+
+          #app_container .content-wrapper section.content header,
+          #app_container .content-wrapper section.content .row {
+              flex: 0 1 auto;
+          }
+
+          #app_container .content-wrapper section.content .table-wrapper {
+              flex: 1 1 auto;
+              display: flex;
+              flex-flow: column;
+              position: relative;
+              min-height: 200px;
+          }
+
+              #app_container .content-wrapper section.content ngx-datatable {
+                  /*position: absolute;*/
+                  width: 100%;
+                  height: 100%;
+                  max-height: 100%;
+                  margin-bottom: 10px;
+                  border-color: #9fc343;
+              }
+
+                  #app_container .content-wrapper section.content ngx-datatable datatable-body {
+                      /*position: absolute;*/
+                      height: 100% !important;
+                      width: 100% !important;
+                      max-height: calc(100vh - 160px) !important;
+                      overflow-x: auto;
+                      overflow-y: auto;
+                  }
+
+  #app_container aside.control-sidebar,
+  #app_container aside.main-sidebar {
+      top: 50px;
+      height: calc(100% - 50px);
+      min-height: initial;
+      overflow-y: auto;
+      padding-top: 0;
+  }
+
+/* messengerlists table */
+messengerlists .ngx-datatable .datatable-row-center,
+messengerlists .ngx-datatable .datatable-row-group .datatable-body-cell {
+  width: 100% !important;
+}
+
+messengerlists .ngx-datatable .datatable-body {
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  #app_container .content-wrapper {
+      height: calc(100vh - 151px) !important; /* 102px = header(100px) + footer(51px) */
+  }
+
+  #app_container aside.control-sidebar,
+  #app_container aside.main-sidebar {
+      top: 100px;
+      height: calc(100% - 100px);
+  }
+}
+
+/* shadow for box */
+.statistic > .row a.block {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+  .statistic > .row a.block:hover {
+      /*transform: scale(1.05);*/
+  }
+
+/* menu-box */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 230px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+  .dropdown-content a {
+      background-color: white;
+      display: flex;
+      width: 100%;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 2;
+      text-decoration: none;
+      color: #a1a8ac;
+      border-bottom: 1px solid #a1a8ac;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+  }
+
+      .dropdown-content a:hover {
+          color: #fff;
+      }
+
+      .dropdown-content a:after {
+          content: "";
+          height: 100%;
+          left: 0;
+          top: 0;
+          width: 0px;
+          position: absolute;
+          transition: all 0.3s ease 0s;
+          -webkit-transition: all 0.3s ease 0s;
+          z-index: -1;
+      }
+
+      .dropdown-content a:hover:after {
+          width: 100%;
+      }
+
+      .dropdown-content a:after {
+          background: #9fc343;
+      }
+
+      .dropdown-content a > span:first-child {
+          line-height: 1.5;
+          margin-right: 10px;
+      }
+
+      .dropdown-content a:hover > span:last-child {
+          color: #fff;
+      }
+
+.side-menu-custom ul.tabs-left {
+  display: flex;
+  border-right: none;
+  border-bottom: 1px solid #fff;
+}
+
+  .side-menu-custom ul.tabs-left > li {
+      margin-bottom: 0;
+  }
+
+  .side-menu-custom ul.tabs-left li.active > a {
+      border-radius: 4px 4px 0 0;
+      border-right: 1px solid #ddd;
+      border-bottom-color: #fff;
+  }
+
+/*
+  home page
+*/
+#app_container .content-wrapper section.content .in-row .message-list .ngx-datatable .datatable-body {
+  height: 427px !important;
+}
+#app_container .content-wrapper section.content .in-row .material-list-dashboard .ngx-datatable .datatable-body {
+  height: 370px !important;
+}

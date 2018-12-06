@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; font-size: 12px; }
+    .content { padding: 0 40px; }
+    .center { text-align: center }
+    .right { text-align: right }
+    .no-margin { margin: 0 }
+    .italic { font-style: italic }
+    .bold { font-weight: bold }
+    .dflex { display: flex }
+
+    /* header */
+    .head {
+      display: flex;
+      background-color: #A6CE39;
+      color: #fff;
+      justify-content: flex-end;
+    }
+
+    .head .logo { margin: 10px; height: 70px; }
+    .head .logo img { height: 100%; }
+    .head .company { margin: auto 0; }
+    /* end header */
+
+    .title-block { margin-bottom: 15px; }
+    .title-block h1 {
+      color: #2B9203;
+      margin-bottom: 0;
+    }
+
+    .info-block {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .info-block p { margin: 5px 0; }
+    .info-block > div { width: 50%; margin: auto }
+
+    .info-block .right-block img {
+      position: relative;
+      width: 60px;
+      height: 140px;
+    }
+    .info-block .right-block .right-block-wrap {
+      width: 100%;
+      margin: auto 0;
+      padding: 20px 20px 20px 10px;
+      background-color: #DEFCB4;
+    }
+
+    .detail-block { margin-top: 10px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, td, th { border: 0.2px solid; }
+    th { height: 25px; }
+    thead { background-color: yellow }
+    td.stt { width: 30px }
+		td {
+      height: 25px;
+      padding: 0 5px;
+      border-style: dotted;
+      border-right-style: solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="template">
+      <div class="head">
+        <div class="company">
+          <p class="right no-margin bold">TOÁN TRÍ TUỆ SUPERBRAIN ĐÀ NẴNG</p>
+          <p class="right no-margin italic">111 Nguyễn Chí Thanh, Quận Hải Châu, ĐN</p>
+          <p class="right no-margin italic">
+            Phone:
+            <span id="phone1">0511.3812234</span> - <span id="phone2">0915599224</span>
+            - facebook: <span id="facebook">Superbrain Đà Nẵng</span>
+          </p>
+        </div>
+        <div class="logo branch">
+          <img src="logo_superbrain.png" />
+        </div>
+      </div>
+    <div class="content">
+      <div class="title-block center">
+        <h1>THỜI KHÓA BIỂU</h1>
+      </div>
+      <div class="info-block">
+        <div class="left-block">
+          <p><strong>Tên học viên: </strong><span>Phan Nhật Minh</span></p>
+          <p><strong>Khóa: </strong><span>K0001</span></p>
+          <p><strong>Lớp: </strong><span>K0001-L02</span></p>
+          <p><strong>GVHD: </strong><span>K0001-L02</span></p>
+          <p><strong>Điện thoại: </strong><span>1234567890</span></p>
+        </div>
+        <div class="right-block dflex">
+          <img src="boy.png" alt="">
+          <div class="right-block-wrap left">
+              <p> <strong>Website: </strong><span id="website"><strong>Superbrain.edu.vn</strong></span></p>
+              <p> <strong>Tên đăng nhập: </strong><span id="username"></span></p>
+              <p> <strong>Mật khẩu: </strong><span id="password"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="detail-block dflex">
+        <table>
+          <thead>
+            <tr>
+              <th>Buổi</th>
+              <th>Ngày</th>
+              <th>Thứ</th>
+              <th>Giờ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="center stt">1</td>
+              <td></td>
+              <td class="center stt"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center stt">2</td>
+              <td></td>
+              <td class="center stt"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center stt">3</td>
+              <td></td>
+              <td class="center stt"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center stt">4</td>
+              <td></td>
+              <td class="center stt"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center stt">5</td>
+              <td></td>
+              <td class="center stt"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center stt">6</td>
+              <td></td>
+              <td class="center stt"></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Buổi</th>
+              <th>Ngày</th>
+              <th>Thứ</th>
+              <th>Giờ</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td class="center stt">7</td>
+                <td></td>
+                <td class="center stt"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="center stt">8</td>
+                <td></td>
+                <td class="center stt"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="center stt">9</td>
+                <td></td>
+                <td class="center stt"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="center stt">10</td>
+                <td></td>
+                <td class="center stt"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="center stt">11</td>
+                <td></td>
+                <td class="center stt"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="center stt">12</td>
+                <td></td>
+                <td class="center stt"></td>
+                <td></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

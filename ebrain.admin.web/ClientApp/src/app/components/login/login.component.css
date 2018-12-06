@@ -1,0 +1,99 @@
+:host {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/../../assets/images/bg_pattern.png') repeat;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.login-container {
+    width: 60%;
+    max-width: 350px;
+    min-width: 280px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    max-height: 480px;
+    margin: 30px auto 0;
+    background-color: rgba(173, 208, 80, 0.7);
+    color: #fff;
+}
+
+
+    .login-container .title {
+        padding: 15px;
+    }
+
+    .login-container .login-form {
+        margin-bottom: 50px;
+    }
+
+    .login-container .login-form .input-group {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+        .login-container .login-form .input-group span.errorMessage {
+            color: #d9534f;
+        }
+
+        .login-container .login-form .input-group .form-group {
+            border-radius: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .login-container .login-form .input-group .form-group:first-child {
+            margin-bottom: 10px !important
+        }
+
+        .login-container .login-form .input-group .form-group input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset;
+        }
+
+        .login-container .login-form .input-group .form-group {
+            padding: 10px 15px;
+            background-color: #fff;
+        }
+
+
+.login-container .login-form .input-group .no-margin {
+    margin: 0;
+}
+
+.boxshadow {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+
+
+    .boxshadow::after {
+        content: '';
+        position: absolute;
+        z-index: -1; /* hide shadow behind image */
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        /*width: 70%;*/
+        left: 15%; /* one half of the remaining 30% */
+        height: 100px;
+        bottom: 0;
+    }
+
+
+.cardshadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.separator-hr {
+    margin: 0;
+}
+
+.last-control-group {
+    margin-bottom: -25px;
+}

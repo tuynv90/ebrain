@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-size: 12px
+        }
+
+        .content {
+            position: relative;
+            width: max-content;
+            margin: auto;
+        }
+
+        hr {
+            border-top-style: dashed;
+        }
+
+        .wrap-table {
+            margin-top: 10px;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        span.lable {
+            margin-right: 10px;
+        }
+
+        .group-left {
+            margin-right: 20px;
+        }
+
+        .wrap-note {
+            display: flex;
+        }
+
+        .wrap-lable {
+            margin-bottom: 8px;
+        }
+
+            .wrap-lable:last-child {
+                margin-bottom: 0;
+            }
+
+        table.table {
+            border: 1px solid #9fc343;
+            border-spacing: 0;
+        }
+
+        th {
+            padding: 6px 12px;
+            border-right: 1px solid #fff;
+        }
+
+            th:last-child {
+                border-right: 0px;
+            }
+
+        td {
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 4px;
+        }
+
+            td:last-child {
+                border-right: 0;
+            }
+
+        thead {
+            color: #fff;
+            background-color: #027FF4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="control-box">
+            <h3>Phiếu nhập/xuất hàng được tạo: </h3>
+            <hr />
+            <div class="d-flex">
+                <div class="group-left">
+                    <div class="wrap-lable">
+                        <span class="lable">Mã phiếu:</span>
+                        <span class="text">{{IONumber}}</span>
+                    </div>
+                    <div class="wrap-lable">
+                        <span class="lable">Đặt hàng:</span>
+                        <span class="text">{{PurchaseOrderCode}}</span>
+                    </div>
+                </div>
+                <div class="group-right">
+                    <div class="wrap-lable">
+                        <span class="lable">Ngày tạo:</span>
+                        <span class="text">{{CreatedDate}}</span>
+                    </div>
+                    <div class="wrap-lable">
+                        <span class="lable">Người cập nhật:</span>
+                        <span class="">{{CreatedBy}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-note">
+                <div>
+                    <span class="lable">Ghi chú:</span>
+                </div>
+                <div>
+                    <span class="note">{{Note}}</span>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div class="wrap-table">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">Loại hàng</th>
+                        <th class="text-center">Nhóm hàng</th>
+                        <th class="text-center">Mã hàng</th>
+                        <th class="text-center">Tên hàng</th>
+                        <th class="text-center">Số lượng</th>
+                        <th class="text-center">Giá</th>
+                        <th class="text-center">Tổng tiền</th>
+                        <th class="text-center">Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{rows}}
+                </tbody>
+            </table>
+        </div>
+        <hr />
+        <strong>
+            Notice:
+        </strong>
+
+        <h6>
+            <em>
+                You received this email to let you know about important changes to your data and services Superbrain.<br />
+                © 2018 Superbrain., Floor P3, 2, The Vista An Phu, 628C Xa Lo Ha Noi , W. An Phú, D. 2, HCM City, VietNam
+            </em>
+        </h6>
+
+    </div>
+</body>
+
+</html>

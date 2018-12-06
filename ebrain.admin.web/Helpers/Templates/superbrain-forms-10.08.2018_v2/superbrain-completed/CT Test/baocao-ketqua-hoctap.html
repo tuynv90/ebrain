@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {margin: 0 }
+    .content { padding: 0 20px 20px; }
+    .center {text-align: center }
+    .right { text-align: right }
+    .no-margin { margin: 0 }
+    .italic { font-style: italic }
+    .bold { font-weight: bold }
+    .dflex { display: flex }
+    .width30px { width: 30px; }
+    .padding0 { padding: 0 }
+
+    .rotate {
+      /* Safari */
+      -webkit-transform: rotate(-90deg);
+
+      /* Firefox */
+      -moz-transform: rotate(-90deg);
+
+      /* IE */
+      -ms-transform: rotate(-90deg);
+
+      /* Opera */
+      -o-transform: rotate(-90deg);
+    }
+
+    .head {
+      display: flex;
+      background-color: #A6CE39;
+      color: #fff;
+      justify-content: flex-end;
+    }
+
+    .head .logo {
+      margin: 10px;
+      height: 70px;
+    }
+    .head .logo img { height: 100%; }
+    .head .company { margin: auto 0; }
+
+    .title-block { margin-bottom: 15px; }
+    .title-block h1 {
+      color: #2B9203;
+      margin-bottom: 0;
+    }
+
+    .info-block p {
+      margin: 5px 0;
+      color: #7b7b7b
+    }
+
+    .info-block div{ width: 50%; }
+    .width80px { width: 80px; height: 50px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, td, th { border: 0.2px solid black; }
+    th { height: 30px; }
+		td { height: 35px; }
+  </style>
+</head>
+
+<body>
+  <div class="template">
+    <div class="head">
+      <div class="company">
+        <p class="right no-margin bold">TOÁN TRÍ TUỆ SUPERBRAIN ĐÀ NẴNG</p>
+        <p class="right no-margin italic">111 Nguyễn Chí Thanh, Quận Hải Châu, ĐN</p>
+        <p class="right no-margin italic">
+          Phone:
+          <span id="phone1">0511.3812234</span> - <span id="phone2">0915599224</span>
+          - facebook: <span id="facebook">Superbrain Đà Nẵng</span>
+        </p>
+      </div>
+      <div class="logo branch">
+        <img src="logo_superbrain.png" />
+      </div>
+    </div>
+    <div class="content">
+      <div class="title-block">
+        <h1 class="center">BÁO CÁO KẾT QUẢ HỌC TẬP</h1>
+        <div class="info-block dflex">
+          <div class="left">
+            <p>Họ và tên: <span id="nameInfo" /></p>
+            <p>Năm sinh: <span id="dateInfo" /></p>
+            <p>Phụ huynh: <span id="dateInfo" /></p>
+          </div>
+          <div class="left">
+            <p>Lớp: <span id="gradeInfo" /></p>
+            <p>Khóa học: <span id="shiftInfo" /></p>
+            <p>GVPT: <span id="teacherInfo" /></p>
+          </div>
+        </div>
+      </div>
+      <div class="detail-block">
+        <table>
+          <thead style="background-color: #FFE59A">
+            <tr>
+              <th rowspan="3" class="padding0 width30px"><div><p class="rotate no-margin">Buổi</p></div></th>
+              <th rowspan="3">Ngày</th>
+              <th rowspan="3">Bài học</th>
+              <th colspan="6" rowspan="1">Nhận xét</th>
+              <th rowspan="3" class="padding0 width30px"><div><p class="rotate no-margin">Power</p></div></th>
+              <th rowspan="3">Giáo viên</th>
+            </tr>
+            <tr>
+              <th rowspan="2" class="width80px">Tư duy logic</th>
+              <th rowspan="2" class="width80px">Tối ưu bài toán</th>
+              <th rowspan="2" class="width80px">Xử lý vấn đề</th>
+              <th rowspan="2" class="width80px">Biểu đạt ngôn ngữ</th>
+              <th rowspan="2" colspan="2" style="min-width: 200px;">Khác</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="center">1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td colspan="2"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td colspan="2"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

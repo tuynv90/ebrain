@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; font-size: 12px }
+    .content { padding: 0 60px 20px; }
+    .center { text-align: center }
+    .right { text-align: right }
+    .no-margin { margin: 0 }
+    .italic { font-style: italic }
+    .bold { font-weight: bold }
+
+    /* header */
+    .head {
+      display: flex;
+      background-color: #A6CE39;
+      color: #fff;
+      justify-content: flex-end;
+    }
+
+    .head .logo {
+      margin: 10px;
+      height: 70px;
+    }
+    .head .logo img { height: 100%; }
+    .head .company { margin: auto 0; }
+    /* end header */
+
+    .title-block {
+      position: relative;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .title-block h1 { margin-bottom: 0; }
+    .title-block .right-block {
+      position: absolute;
+      right: 80px;
+      top: 10px;
+      color: red;
+    }
+
+    .info-block {
+      display: flex;
+      border: 0.2px solid #f97b7b;
+      padding: 4px 10px;
+    }
+    .info-block p { margin: 5px 0; }
+    .info-block .left-block { width: 60% }
+    .info-block .right-block { width: 40% }
+    
+    .detail-block { margin-top: 10px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, td, th { border: 0.2px solid #f97b7b; }
+    th { height: 25px; }
+		td { height: 25px; padding: 0 5px; }
+    
+    .signal-block {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-top: 10px;
+      padding: 0 30px;
+    }
+
+    hr {
+      border-top: 1px dashed #8c8b8b;
+      margin-top: 90px;
+    }
+  </style>
+  <script>
+    function formatVND(number) {
+      let thousand_separator = '.',
+      	  number_string = number.toString(),
+          rest = number_string.length % 3,
+          result = number_string.substr(0, rest),
+          thousands = number_string.substr(rest).match(/\d{3}/gi);
+
+      if (thousands) {
+        separator = rest ? thousand_separator : '';
+        result += separator + thousands.join(thousand_separator);
+      }
+
+      return result;
+    }
+
+    function setPrintDate() {
+      const ele = document.getElementById('date');
+      ele.innerHTML = new Date().toLocaleDateString();
+    }
+
+    function formatAll() {
+      const elements = document.getElementsByClassName("currency");
+      for (const e of elements) {
+        e.innerHTML = formatVND(e.innerHTML)
+      }
+      setPrintDate()
+    }
+  </script>
+</head>
+<body onload='formatAll();'>
+  <div class="template">
+    <div class="head">
+      <div class="company">
+        <p class="right no-margin bold">TOÁN TRÍ TUỆ SUPERBRAIN ĐÀ NẴNG</p>
+        <p class="right no-margin italic">111 Nguyễn Chí Thanh, Quận Hải Châu, ĐN</p>
+        <p class="right no-margin italic">
+          Phone:
+          <span id="phone1">0511.3812234</span> - <span id="phone2">0915599224</span>
+          - facebook: <span id="facebook">Superbrain Đà Nẵng</span>
+        </p>
+      </div>
+      <div class="logo branch">
+        <img src="logo_superbrain.png" />
+      </div>
+    </div>
+    <div class="content">
+      <div class="title-block">
+        <h1>PHIẾU THU</h1>
+        <p class="no-margin">Ngày ...... tháng ...... năm ......</p>
+        <div class="right-block">
+          <p class="no-margin">Số PT:</p>
+          <p class="no-margin">Liên 1:</p>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="left-block">
+          <p>Tên học viên:</p>
+          <p>Khóa:</p>
+          <p>Ngày học:</p>
+          <p>Ghi chú: Ưu đãi mùa hè</p>
+        </div>
+        <div class="right-block">
+          <p>ĐT: </p>
+          <p>Lớp: </p>
+        </div>
+      </div>
+      <div class="detail-block">
+        <table>
+          <thead>
+            <tr class="center">
+              <th>Diễn giải</th>
+              <th>ĐVT</th>
+              <th>Số lượng</th>
+              <th>Đơn giá</th>
+              <th>CK</th>
+              <th>Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Học phí</td>
+              <td class="center">Khóa</td>
+              <td class="center"></td>
+              <td class="right currency"></td>
+              <td class="right"></td>
+              <td class="right currency"></td>
+            </tr>
+            <tr>
+              <td>Sách</td>
+              <td class="center">Bột</td>
+              <td class="center"></td>
+              <td class="right currency"></td>
+              <td class="right"></td>
+              <td class="right currency"></td>
+            </tr>
+            <tr>
+              <td>Vở bài tập</td>
+              <td class="center">Cuốn</td>
+              <td class="center"></td>
+              <td class="right currency"></td>
+              <td class="right"></td>
+              <td class="right currency"></td>
+            </tr>
+            <tr>
+              <td>Vở tốc ký</td>
+              <td class="center">Cuốn</td>
+              <td class="center"></td>
+              <td class="right currency"></td>
+              <td class="right"></td>
+              <td class="right currency"></td>
+            </tr>
+            <tr>
+              <td>Sổ liên lạc</td>
+              <td class="center">Cuốn</td>
+              <td class="center"></td>
+              <td class="right currency"></td>
+              <td class="right"></td>
+              <td class="right currency"></td>
+            </tr>
+            <tr>
+              <td rowspan="5" colspan="3">Số tiền viết bằng chữ:</td>
+              <td>Tổng tiền</td>
+              <td colspan="2" class="right"></td>
+            </tr>
+            <tr>
+              <td>Chiết khấu:</td>
+              <td colspan="2" class="right"></td>
+            </tr>
+            <tr>
+              <td>Thuế:</td>
+              <td colspan="2" class="right"></td>
+            </tr>
+            <tr>
+              <td>Thực thu:</td>
+              <td colspan="2" class="right currency"></td>
+            </tr>
+            <tr>
+              <td>Còn lại:</td>
+              <td colspan="2" class="right currency">5000000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="signal-block">
+        <div class="signal">
+          <p class="no-margin">Giám đốc</p>
+          <p class="no-margin">(Ký, họ tên)</p>
+          <hr>
+        </div>
+        <div class="signal">
+          <p class="no-margin">KTT</p>
+          <p class="no-margin">(Ký, họ tên)</p>
+          <hr>
+        </div>
+        <div class="signal">
+          <p class="no-margin">Thủ quỷ</p>
+          <p class="no-margin">(Ký, họ tên)</p>
+          <hr>
+        </div>
+        <div class="signal">
+          <p class="no-margin">Người nộp tiền</p>
+          <p class="no-margin">(Ký, họ tên)</p>
+          <hr>
+        </div>
+      </div>
+      <p class="center">(Cần đối chiếu khi <strong>LẬP, GIAO, NHẬN</strong> hóa đơn)</p>
+      <p class="right no-margin"><strong>Ngày in: <span id="date" /></strong></p>
+    </div>
+  </div>
+</body>
+</html>

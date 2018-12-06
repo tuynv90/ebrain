@@ -1,0 +1,17 @@
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/bin/Debug/netstandard2.0/ebrain.admin.bc.deps.json
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/bin/Debug/netstandard2.0/ebrain.admin.bc.dll
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/bin/Debug/netstandard2.0/ebrain.admin.bc.pdb
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.csprojAssemblyReference.cache
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.csproj.CoreCompileInputs.cache
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.AssemblyInfoInputs.cache
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.AssemblyInfo.cs
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.dll
+/Users/vantuy/Documents/free/superbrain/src/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.pdb
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/bin/Debug/netstandard2.0/ebrain.admin.bc.deps.json
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/bin/Debug/netstandard2.0/ebrain.admin.bc.dll
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/bin/Debug/netstandard2.0/ebrain.admin.bc.pdb
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.csproj.CoreCompileInputs.cache
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.AssemblyInfoInputs.cache
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.AssemblyInfo.cs
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.dll
+/Users/vantuy/Documents/dotnetcore/ebrain.admin.bc/obj/Debug/netstandard2.0/ebrain.admin.bc.pdb

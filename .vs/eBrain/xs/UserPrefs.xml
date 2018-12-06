@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{EBF5C653-30AC-4F7F-B1AB-4A24EB060DAD}|Default">
+  <MonoDevelop.Ide.ItemProperties.superbrain.web PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ebrain.admin.web/ebrain.admin.web.csproj">
+    <Files>
+      <File FileName="ebrain.admin.web/Program.cs" Line="1" Column="1" />
+      <File FileName="ebrain.admin.web/Controllers/AccessRightsController.cs" Line="23" Column="29" />
+      <File FileName="ebrain.admin.web/Startup.cs" Line="24" Column="1" />
+      <File FileName="ebrain.admin.web/appsettings.json" Line="22" Column="17" />
+      <File FileName="ebrain.admin.web/ebrain.admin.web.csproj" Line="23" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ebrain.admin.web PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

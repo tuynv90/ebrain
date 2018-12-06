@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0 }
+    .center { text-align: center }
+    .right { text-align: right }
+    .no-margin { margin: 0 }
+    .italic { font-style: italic }
+    .bold { font-weight: bold }
+    .dflex { display: flex }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, td, th { border: 0.2px solid black; }
+    th { height: 30px; }
+		td { height: 35px; }
+    
+    /* style riêng */
+    thead { background-color: #C6E0B3 }
+    tr.line-dot td {
+      border-style: dotted;
+      border-right-style: solid;
+    }
+    tr.comment {
+      background-color: #C6E0B3;
+      min-height: 60px;
+    }
+
+    .head {
+      display: flex;
+      background-color: #A6CE39;
+      color: #fff;
+      justify-content: flex-end;
+    }
+
+    .head .logo {
+      margin: 10px;
+      height: 70px;
+    }
+    .head .logo img { height: 100%; }
+    .head .company { margin: auto 0; }
+
+    .title-block { margin-bottom: 15px; }
+    .title-block h1 {
+      color: #2B9203;
+      margin-bottom: 0;
+    }
+
+    .info-block p { margin: 5px 0; }
+    .info-block { justify-content: space-between; }
+    .info-block p.time {
+      width: 260px;
+      text-align: left;
+    }
+
+    #timeInfo { width: 100px; }
+    .content { padding: 0 20px 20px; }
+    .detail-block { margin-top: 10px; }
+  
+    .signal { margin-top: 40px; }
+    .signal .hr {
+      width: 300px;
+      border-bottom: 1px solid #ddd;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="template">
+    <div class="head">
+      <div class="company">
+        <p class="right no-margin bold">TOÁN TRÍ TUỆ SUPERBRAIN ĐÀ NẴNG</p>
+        <p class="right no-margin italic">111 Nguyễn Chí Thanh, Quận Hải Châu, ĐN</p>
+        <p class="right no-margin italic">
+          Phone:
+          <span id="phone1">0511.3812234</span> - <span id="phone2">0915599224</span>
+          - facebook: <span id="facebook">Superbrain Đà Nẵng</span>
+        </p>
+      </div>
+      <div class="logo branch">
+        <img src="logo_superbrain.png" />
+      </div>
+    </div>
+    <div class="content">
+      <div class="title-block center">
+        <h1>KẾT QUẢ KIỂM TRA</h1>
+        <div class="info-block dflex">
+          <p><strong>Name/Tên: </strong><span id="nameInfo" /></p>
+          <p><strong>Grade/Lớp: </strong><span id="gradeInfo" /></p>
+          <p><strong>Date/Ngày: </strong><span id="dateInfo" /></p>
+          <p class="time"><strong>Time/Thời gian làm bài: </strong><span id="timeInfo" /></p>
+        </div>
+      </div>
+      <div class="detail-block">
+        <table>
+          <thead>
+            <tr>
+              <th>Strong/Điểm mạnh</th>
+              <th>Weakness/Điểm yếu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="line-dot">
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="line-dot">
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="line-dot">
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="line-dot">
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="center">Estimated/Thời gian dự kiến:</td>
+            </tr>
+            <tr class="comment">
+              <td colspan="2">Comments/Nhận xét:</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="signal dflex">
+        <p class="no-margin left">Instructor/Giáo viên (Name and Signature): </p>
+        <p class="no-margin hr" />
+      </div>
+      <p class="right italic"><strong>***Kết quả này có giá trị trong vòng 1 tháng</strong></p>
+    </div>
+  </div>
+</body>
+</html>
